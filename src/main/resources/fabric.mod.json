@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "cff",
+  "version": "${version}",
+  "name": "Custom Fluid Framework",
+  "description": "Profile-driven custom fluid framework with Flowing Fluids integration.",
+  "authors": ["Envixity"],
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": { "main": ["dev.envixity.cff.CffMod"] },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "1.21.11",
+    "fabric-api": "*",
+    "flowing_fluids": ">=1.0.6"
+  }
+}
