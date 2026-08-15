@@ -1,5 +1,6 @@
 package dev.envixity.cff;
 
+import dev.envixity.cff.integration.CffServerHooks;
 import dev.envixity.cff.test.CffTestFluids;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -13,5 +14,6 @@ public final class CffMod implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("CFF v0.1 bootstrap: WATER/LAVA profile core loaded; Flowing Fluids bridge available.");
         CffTestFluids.register();
+        CffServerHooks.register();
     }
 }
